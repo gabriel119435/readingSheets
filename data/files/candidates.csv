@@ -1,0 +1,4 @@
+name,age,gender,disability,city,salary_expectation,tech_stack
+alice,30,f,false,berlin,70000,"python, flask, sql,sql"
+bob,,m,,berlin,65000,"java; spring; sql"
+alice,30,f,false,berlin,70000,"python,flask,sql"

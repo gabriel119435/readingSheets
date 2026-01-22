@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>candidate import</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+<h1>import candidates</h1>
+
+<button id="delete-all" type="button">delete all</button>
+
+<form id="upload-form"><input type="file" name="files" id="files" multiple>
+    <button type="submit">upload</button>
+</form>
+
+<p id="upload-status"></p>
+
+<table id="candidates-table">
+    <thead>
+    <tr>
+        <th id="th-name">name</th>
+        <th id="th-city">city</th>
+        <th id="th-age">age</th>
+        <th id="th-gender">gender</th>
+        <th id="th-disability">disability</th>
+        <th id="th-salary_expectation">salary_expectation</th>
+        <th id="th-tech_stack">
+            tech_stack
+            <div id="filter-add"></div>
+            <div id="filter-remove"></div>
+        </th>
+    </tr>
+    </thead>
+    <tbody id="candidates-table-body"></tbody>
+</table>
+
+<p id="download-status"></p>
+
+<script type="module" src="static/main.js"></script>
+</body>
+</html>
