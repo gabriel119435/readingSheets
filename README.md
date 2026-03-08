@@ -28,4 +28,4 @@ the frontend is split into es modules, each with a single responsibility:
 
 ## working example
 
-![demo](demo.gif)
+![demo](demo.png)
