@@ -1,7 +1,7 @@
 // responsible for binding/updating/rendering table
-import {columns} from "./column.js";
-import {createElement, getDom} from "./dom.js";
-import {applySort} from "./sort.js";
+import {columns} from "../columnDefinition.js";
+import {createElement, getDom} from "../elementAccess.js";
+import {applySort} from "../logic/sort.js";
 
 const sortable = columns.filter(c => c.sortable)
 

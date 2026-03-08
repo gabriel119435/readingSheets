@@ -1,5 +1,5 @@
 // responsible for computing sorted values. no dom. no state.
-import {columns} from "./column.js";
+import {columns} from "../columnDefinition.js";
 
 export function toggleSort(currColumn, nextColumn) {
     if (currColumn == null || currColumn.column !== nextColumn) return {column: nextColumn, direction: "asc"};

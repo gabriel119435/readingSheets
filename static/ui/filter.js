@@ -1,5 +1,5 @@
 // responsible for binding/updating/rendering filter
-import {createElement, getDom} from "./dom.js";
+import {createElement, getDom} from "../elementAccess.js";
 
 export function renderFilter(allTechs, selectedTechs) {
     const {filterAddDiv, filterRemoveDiv} = getDom();

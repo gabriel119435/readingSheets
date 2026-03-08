@@ -1,11 +1,11 @@
 // orchestration and state holder
 
 import {deleteCandidates, downloadCandidates, uploadCandidates} from "./api.js";
-import {bindHeaders, renderFullTable} from "./tableDom.js";
-import {getDom} from "./dom.js";
-import {toggleSort} from "./sort.js";
-import {applyFilter, getAllTechs} from "./filter.js";
-import {bindFilterAdd, bindFilterRemove, renderFilter} from "./filterDom.js";
+import {bindHeaders, renderFullTable} from "./ui/table.js";
+import {getDom} from "./elementAccess.js";
+import {toggleSort} from "./logic/sort.js";
+import {applyFilter, getAllTechs} from "./logic/filter.js";
+import {bindFilterAdd, bindFilterRemove, renderFilter} from "./ui/filter.js";
 
 // state
 let currentSort = null;
@@ -40,6 +40,7 @@ function bindDeleteAndUploadButtons() {
 
         const body = await uploadCandidates(data);
         getDom().uploadStatusText.textContent = "finished upload: " + body;
+        input.value = "";
         currentRows = await downloadCandidates();
         renderWithState();
     });

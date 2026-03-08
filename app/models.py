@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Boolean, UniqueConstraint, Index
 
-from db import Base
+from app.db import Base
 
 
 class Candidate(Base):
